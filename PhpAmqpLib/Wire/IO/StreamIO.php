@@ -223,6 +223,8 @@ class StreamIO extends AbstractIO
     {
         $this->checkBrokerHeartbeat();
 
+        var_dump($data);
+
         $written = 0;
         $len = mb_strlen($data, 'ASCII');
         $write_start = microtime(true);
